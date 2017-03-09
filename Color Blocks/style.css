@@ -1,38 +1,40 @@
-.button {
-  width: 90px;
-  margin: 7.5px;
+.count {
+  text: 70px
+}
 
+.button {
+    width: 90px;
+    margin: 7.5px;
 }
 
 .red {
-  background-color: red;
-  height: 100px;
-  width: 100px;
-  margin: 5px;
-  float: left;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float: left;
 }
 
 .blue {
-  background-color: blue;
-  height: 100px;
-  width: 100px;
-  margin: 5px;
-  float: left;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float: left;
 }
 
 .green {
-  background-color: green;
-  height: 100px;
-  width: 100px;
-  margin: 5px;
-  float: left;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float: left;
 }
 
-
 .yellow {
-  background-color: yellow;
-  height: 100px;
-  width: 100px;
-  margin: 5px;
-  float: left;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float: left;
 }

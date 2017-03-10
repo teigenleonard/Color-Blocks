@@ -6,10 +6,10 @@ var yellowBlocks = 1;
 $(document).ready(function(){
   // console.log("hello!");
 
-  $(".container").append("<div class= 'blue'></div>");
-  $(".container").append("<div class= 'red'></div>");
-  $(".container").append("<div class= 'green'></div>");
-  $(".container").append("<div class= 'yellow'></div>");
+  $(".blocks").append("<div class= 'blue'></div>");
+  $(".blocks").append("<div class= 'red'></div>");
+  $(".blocks").append("<div class= 'green'></div>");
+  $(".blocks").append("<div class= 'yellow'></div>");
 
 
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
   $(".container").on('click','#bluebutton', function(){
-    $(".container").append("<div class= 'blue'></div>");
+    $(".blocks").append("<div class= 'blue'></div>");
       // numClicks += 1;
   });
 
@@ -46,3 +46,8 @@ $(document).ready(function(){
   // })
 // });
 });
+
+// function addBlock() {
+//   $(".blocks").append("<div class='blue'></div>");
+//
+// }

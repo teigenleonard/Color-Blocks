@@ -31,6 +31,12 @@ $(document).ready(function() {
         $(".blocks").append("<div class= 'yellow'></div>");
         yellowBlocks += 1;
     });
+
+  //HARD MODE //
+  $(".container").on('click', '.blue',function(){
+      $(this).remove();
+      blueBlocks -= 1;
+  });
     // $(".container").on('click','button', function(){
     //       if ('#bluebutton') {
     //         blueBlocks += 1;

@@ -1,5 +1,7 @@
 .count {
-  text: 70px
+  text: 70px;
+  width: 90px;
+  float: left;
 }
 
 .button {

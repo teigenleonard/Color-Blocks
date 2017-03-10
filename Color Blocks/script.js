@@ -12,9 +12,11 @@ $(document).ready(function() {
     $(".blocks").append("<div class= 'yellow'></div>");
 
 
+
     $(".container").on('click', '#bluebutton', function() {
-        $(".blocks").append("<div class= 'blue'></div>");
         blueBlocks += 1;
+        $(".count").children().last().text("Blue Blocks: " + blueBlocks);
+        $(".blocks").append("<div class= 'blue'></div>");
     });
 
     $(".container").on('click', '#redbutton', function() {
@@ -31,6 +33,10 @@ $(document).ready(function() {
         $(".blocks").append("<div class= 'yellow'></div>");
         yellowBlocks += 1;
     });
+
+
+
+
 
     // ** HARD MODE ** //
     $(".container").on('click', '.blue', function() {

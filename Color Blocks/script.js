@@ -32,7 +32,7 @@ $(document).ready(function() {
         yellowBlocks += 1;
     });
 
-    //HARD MODE //
+    // ** HARD MODE ** //
     $(".container").on('click', '.blue', function() {
         $(this).remove();
         blueBlocks -= 1;

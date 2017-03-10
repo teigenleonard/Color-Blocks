@@ -21,17 +21,20 @@ $(document).ready(function(){
       // numClicks += 1;
   });
 
-  // $(".container").on('click','#redbutton', function(){
+  $(".container").on('click','#redbutton', function(){
+  $(".blocks").append("<div class= 'red'></div>");
       // numClicks += 1;
-  // });
+  });
 
-  // $(".container").on('click','#greenbutton', function(){
+  $(".container").on('click','#greenbutton', function(){
+  $(".blocks").append("<div class= 'green'></div>");
       // numClicks += 1;
-  // });
+  });
 
-  // $(".container").on('click','#yellowbutton', function(){
+  $(".container").on('click','#yellowbutton', function(){
+  $(".blocks").append("<div class= 'yellow'></div>");
       // numClicks += 1;
-  // });
+  });
   // $(".container").on('click','button', function(){
   //       if ('#bluebutton') {
   //         blueBlocks += 1;

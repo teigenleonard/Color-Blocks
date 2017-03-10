@@ -1,9 +1,9 @@
-/*.count {
+header {
   font-size: : 30px;
   width: 90px;
   float: bottom;
-  text-transform: uppercase;*/
-/*}*/
+  text-transform: uppercase;
+}
 
 .button {
     width: 90px;

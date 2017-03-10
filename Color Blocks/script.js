@@ -7,7 +7,11 @@ var yellowBlocks = 1;
 
 $(document).ready(function() {
     // console.log("hello!");
-    $(".container").append("<div class='count'>" + "<p>Blue Blocks: </p>" + "</div>");
+    $("header").append("<div class='count'>" + "<p>Blue Blocks: </p>" + "</div>");
+    $("header").append("<div class='count'>" + "<p>Red Blocks: </p>" + "</div>");
+    $("header").append("<div class='count'>" + "<p>Green Blocks: </p>" + "</div>");
+    $("header").append("<div class='count'>" + "<p>Yellow Blocks: </p>" + "</div>");
+
 
     $(".blocks").append("<div class= 'blue'></div>");
     $(".blocks").append("<div class= 'red'></div>");
@@ -25,16 +29,20 @@ $(document).ready(function() {
     $(".container").on('click', '#redbutton', function() {
         $(".blocks").append("<div class= 'red'></div>");
         redBlocks += 1;
+        $(".count").children().last().text("Red Blocks: " + redBlocks);
+
     });
 
     $(".container").on('click', '#greenbutton', function() {
         $(".blocks").append("<div class= 'green'></div>");
         greenBlocks += 1;
+        $(".count").children().last().text("Green Blocks: " + greenBlocks);
     });
 
     $(".container").on('click', '#yellowbutton', function() {
         $(".blocks").append("<div class= 'yellow'></div>");
         yellowBlocks += 1;
+        $(".count").children().last().text("Yellow Blocks: " + yellowBlocks);
     });
 
 

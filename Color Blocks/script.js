@@ -32,11 +32,23 @@ $(document).ready(function() {
         yellowBlocks += 1;
     });
 
-  //HARD MODE //
-  $(".container").on('click', '.blue',function(){
-      $(this).remove();
-      blueBlocks -= 1;
-  });
+    //HARD MODE //
+    $(".container").on('click', '.blue', function() {
+        $(this).remove();
+        blueBlocks -= 1;
+    });
+    $(".container").on('click', '.red', function() {
+        $(this).remove();
+        redBlocks -= 1;
+    });
+    $(".container").on('click', '.green', function() {
+        $(this).remove();
+        greenBlocks -= 1;
+    });
+    $(".container").on('click', '.yellow', function() {
+        $(this).remove();
+        yellowBlocks -= 1;
+    });
     // $(".container").on('click','button', function(){
     //       if ('#bluebutton') {
     //         blueBlocks += 1;

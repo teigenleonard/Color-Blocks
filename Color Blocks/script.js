@@ -3,8 +3,11 @@ var redBlocks = 1;
 var greenBlocks = 1;
 var yellowBlocks = 1;
 
+
+
 $(document).ready(function() {
     // console.log("hello!");
+    $(".container").append("<div class='count'>" + "<p>Blue Blocks: </p>" + "</div>");
 
     $(".blocks").append("<div class= 'blue'></div>");
     $(".blocks").append("<div class= 'red'></div>");

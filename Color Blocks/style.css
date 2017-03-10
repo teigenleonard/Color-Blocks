@@ -1,8 +1,7 @@
-header {
-  font-size: : 30px;
-  width: 90px;
-  float: bottom;
-  text-transform: uppercase;
+.count {
+    font-size: 15px;
+    display: inline-block;
+    /*text-transform: uppercase;*/
 }
 
 .button {
@@ -10,8 +9,17 @@ header {
     margin: 7.5px;
 }
 
+/*.blocks.children {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float: left;
+}*/
+
 .red {
     background-color: red;
+    border-radius: 10px;
     height: 100px;
     width: 100px;
     margin: 5px;
@@ -20,6 +28,7 @@ header {
 
 .blue {
     background-color: blue;
+    border-radius: 10px;
     height: 100px;
     width: 100px;
     margin: 5px;
@@ -28,6 +37,7 @@ header {
 
 .green {
     background-color: green;
+    border-radius: 10px;
     height: 100px;
     width: 100px;
     margin: 5px;
@@ -36,6 +46,7 @@ header {
 
 .yellow {
     background-color: yellow;
+    border-radius: 10px;
     height: 100px;
     width: 100px;
     margin: 5px;

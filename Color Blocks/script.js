@@ -3,14 +3,12 @@ var redBlocks = 1;
 var greenBlocks = 1;
 var yellowBlocks = 1;
 
-
-
 $(document).ready(function() {
     // console.log("hello!");
-    $("header").append("<div class='count'>" + "<p>Blue Blocks: </p>" + "</div>");
-    $("header").append("<div class='count'>" + "<p>Red Blocks: </p>" + "</div>");
-    $("header").append("<div class='count'>" + "<p>Green Blocks: </p>" + "</div>");
-    $("header").append("<div class='count'>" + "<p>Yellow Blocks: </p>" + "</div>");
+    $(".count").append("<div class='bluecount'>" + "<p>Blue Blocks: </p>" + "</div>");
+    $(".count").append("<div class='redcount'>" + "<p>Red Blocks: </p>" + "</div>");
+    $(".count").append("<div class='greencount'>" + "<p>Green Blocks: </p>" + "</div>");
+    $(".count").append("<div class='yellowcount'>" + "<p>Yellow Blocks: </p>" + "</div>");
 
 
     $(".blocks").append("<div class= 'blue'></div>");
@@ -22,49 +20,53 @@ $(document).ready(function() {
 
     $(".container").on('click', '#bluebutton', function() {
         blueBlocks += 1;
-        $(".count").children().last().text("Blue Blocks: " + blueBlocks);
+        $(".bluecount").children().last().text("Blue Blocks: " + blueBlocks);
         $(".blocks").append("<div class= 'blue'></div>");
     });
 
     $(".container").on('click', '#redbutton', function() {
         $(".blocks").append("<div class= 'red'></div>");
         redBlocks += 1;
-        $(".count").children().last().text("Red Blocks: " + redBlocks);
-
+        $(".redcount").children().last().text("Red Blocks: " + redBlocks);
     });
 
     $(".container").on('click', '#greenbutton', function() {
         $(".blocks").append("<div class= 'green'></div>");
         greenBlocks += 1;
-        $(".count").children().last().text("Green Blocks: " + greenBlocks);
+        $(".greencount").children().last().text("Green Blocks: " + greenBlocks);
     });
 
     $(".container").on('click', '#yellowbutton', function() {
         $(".blocks").append("<div class= 'yellow'></div>");
         yellowBlocks += 1;
-        $(".count").children().last().text("Yellow Blocks: " + yellowBlocks);
+        $(".yellowcount").children().last().text("Yellow Blocks: " + yellowBlocks);
     });
-
-
-
 
 
     // ** HARD MODE ** //
     $(".container").on('click', '.blue', function() {
         $(this).remove();
         blueBlocks -= 1;
+        $(".bluecount").children().last().text("Blue Blocks: " + blueBlocks);
     });
+
     $(".container").on('click', '.red', function() {
         $(this).remove();
         redBlocks -= 1;
+        $(".redcount").children().last().text("Red Blocks: " + redBlocks);
     });
+
     $(".container").on('click', '.green', function() {
         $(this).remove();
         greenBlocks -= 1;
+        $(".greencount").children().last().text("Green Blocks: " + greenBlocks);
     });
+
     $(".container").on('click', '.yellow', function() {
         $(this).remove();
         yellowBlocks -= 1;
+        $(".yellowcount").children().last().text("Yellow Blocks: " + yellowBlocks);
+
     });
     // $(".container").on('click','button', function(){
     //       if ('#bluebutton') {

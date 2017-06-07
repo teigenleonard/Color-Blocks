@@ -16,27 +16,33 @@ $(document).ready(function() {
     $(".blocks").append("<div class= 'green'></div>");
     $(".blocks").append("<div class= 'yellow'></div>");
 
+    $('.blocks').on('click','.block', function(){
 
+    })
 
-    $(".container").on('click', '#bluebutton', function() {
+    $('#buttons').on('click' , function() {
+      
+    }
+
+    $('#bluebutton').on('click', function() {
         blueBlocks += 1;
         $(".bluecount").children().last().text("Blue Blocks: " + blueBlocks);
         $(".blocks").append("<div class= 'blue'></div>");
     });
 
-    $(".container").on('click', '#redbutton', function() {
+    $('#redbutton').on('click', function() {
         $(".blocks").append("<div class= 'red'></div>");
         redBlocks += 1;
         $(".redcount").children().last().text("Red Blocks: " + redBlocks);
     });
 
-    $(".container").on('click', '#greenbutton', function() {
+    $('#greenbutton').on('click', function() {
         $(".blocks").append("<div class= 'green'></div>");
         greenBlocks += 1;
         $(".greencount").children().last().text("Green Blocks: " + greenBlocks);
     });
 
-    $(".container").on('click', '#yellowbutton', function() {
+    $('#yellowbutton').on('click', function() {
         $(".blocks").append("<div class= 'yellow'></div>");
         yellowBlocks += 1;
         $(".yellowcount").children().last().text("Yellow Blocks: " + yellowBlocks);

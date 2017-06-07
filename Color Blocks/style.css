@@ -3,6 +3,12 @@
     display: inline-block;
     /*text-transform: uppercase;*/
 }
+.count div {
+  float: left;
+}
+.buttons button {
+  width: 100px;
+}
 
 .button {
     width: 90px;

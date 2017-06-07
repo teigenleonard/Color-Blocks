@@ -18,11 +18,11 @@ $(document).ready(function() {
 
     $('.blocks').on('click','.block', function(){
 
-    })
+    });
 
     $('#buttons').on('click' , function() {
-      
-    }
+
+    });
 
     $('#bluebutton').on('click', function() {
         blueBlocks += 1;
